@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CakeContainer from "./components/CakeContainer";
+import './index.css'
+import HooksCakeContainer from "./components/HooksCakeContainer";
+import IceCreamConatiner from "./components/IceCreamConatiner";
+import HookCreamContainer from "./components/HookCreamContainer"
+import NewInputContainer from './components/NewInputConatiner';
+import ItemContainer from "./components/ItemContainer";
+import UserContainer from "./components/UserContainer";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {/* <ItemContainer cake/>
+      <ItemContainer IceCream/>
+      <CakeContainer />
+      <HooksCakeContainer/>
+      
+
+      <IceCreamConatiner/>
+      <HookCreamContainer/>
+      <NewInputContainer/> */}
+      <UserContainer/>
     </div>
   );
-}
+};
 
 export default App;
